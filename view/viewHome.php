@@ -32,6 +32,8 @@ ob_start(); ?>
         <section id="articles">
 
         <?php 
+        
+        $articles = getArticles();
 
             foreach($articles as $article) : ?>
 

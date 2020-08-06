@@ -21,3 +21,28 @@ function getDetails($id) {
 
     return $detail;
 }
+
+// Users
+
+function createUser($data) {
+
+    $bdd = getBdd();
+    $create = $bdd->prepare("INSERT INTO t_users (u_name, u_email, u_password) VALUES (?, ?, ?)");
+    $create->execute($data);
+}
+
+function getUsers($data) {
+
+    $bdd = getBdd();
+    $users = $bdd->prepare("SELECT * FROM t_users WHERE u_email=?");
+    $users->execute(array($data));
+
+    if($users->rowCount() == 1) {
+
+        return $users->fetch();
+    
+    } else {
+        
+        return false;
+    }
+}

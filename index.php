@@ -2,8 +2,8 @@
 
 require "model/model.php";
 
-$articles = getArticles();
-require "view/viewHome.php";
+
+require "view/viewSignIn.php";
 
 
     

@@ -49,7 +49,7 @@ ob_start(); ?>
             <p>Piscine :<span class="price">  <?= $b_swim == 1 ? " oui !" : "non !" ?> </span></p>
 
             <p class="lead mt-5">
-                <a class="btn btn-primary btn-lg" href="#!" role="button">Je reserve</a>
+                <a class="btn btn-success btn-lg" href="#!" role="button">Je reserve</a>
             </p>
 
         </div>

@@ -39,13 +39,16 @@
                 <class class="collapse navbar-collapse" id="navbarItems">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-grey items" href="index.html">Destinations</a>
+                            <a class="nav-link items" href="booking.php">Mes annonces</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link items" href="portfolio.html">Meilleurs offres</a>
+                            <a class="nav-link items" href="#!">Destinations</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link items" href="contact.html">Contact</a>
+                            <a class="nav-link items" href="#!">Meilleurs offres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link items" href="#!">Contact</a>
                         </li>
                     </ul>
                 </class>

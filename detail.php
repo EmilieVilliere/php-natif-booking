@@ -18,6 +18,9 @@ if (isset($_GET['id'])) {
         $b_price = $n['b_price'];
         $b_type = $n['b_type'];
         $b_swim = $n['b_swim'];
+        $b_image_1 = $n['b_image_1'];
+        $b_image_2 = $n['b_image_2'];
+        $b_image_3 = $n['b_image_3'];
     }
 }
 

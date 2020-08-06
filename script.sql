@@ -37,7 +37,7 @@ INSERT INTO `t_booking` (b_title, b_subtitle, b_description, b_city, b_surface, 
     VALUES (
         "Maison près de la côte", "Maison tout à fait attrayante, des criques sont pas loin du tout, c'est vraiment chouette", 
         "Que dire de plus.. c'est près de la mer, il y a du vent en facade mais pas dans la cour sécurisée, vous pourrez laisser les gosses s'amuser, pas de problèmes !",
-        "Saint-Tropez", 150, 245, "maison", 0, "2-house2.jpg", "2-bathroom2.jpg", "2-sallon2.jpg"
+        "Saint-Tropez", 150, 245, "maison", 0, "2-house-2.jpg", "2-bathroom2.jpg", "2-saloon2.jpg"
     );
 
 INSERT INTO `t_booking` (b_title, b_subtitle, b_description, b_city, b_surface, b_price, b_type, b_swim, b_image_1, b_image_2, b_image_3)
@@ -65,6 +65,6 @@ INSERT INTO `t_booking` (b_title, b_subtitle, b_description, b_city, b_surface, 
     VALUES (
         "Appartement dans les hauteurs", "Dans les hauteurs de saint-raphael se cache la petite maison dans la prairie !", 
         "Que dire de plus.. c'est près de la mer, il y a du vent en facade mais pas dans la cour sécurisée, vous pourrez laisser les gosses s'amuser, pas de problèmes !",
-        "Saint-raphael ", 38, 75, "appartement", 1, "6-house6.jpg", "6-saloon-6.jpg", "6-swim6.jpg"
+        "Saint-raphael ", 38, 75, "appartement", 1, "6-house-6.jpg", "6-saloon-6.jpg", "6-swim6.jpg"
     );
 

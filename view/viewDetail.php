@@ -18,6 +18,15 @@ ob_start(); ?>
         background-size: cover;	
         background-position : bottom right;
     }
+    #city {
+        padding-top: 30px;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    span {
+        font-weight: 500;
+    }
 </style>
 
 <div class="container">
@@ -34,7 +43,7 @@ ob_start(); ?>
     <div>
         <h1 class="display-3"><?= $b_title; ?></h1>
             <p class="lead"> <?= $b_description ?></p>
-            <hr class="my-2">
+            <hr class="my-2 mb-4">
             <p><?= $b_subtitle ?></p>
 
         <div class="row">
@@ -42,6 +51,12 @@ ob_start(); ?>
                 <div id="house-img" class="mb-4">
                     <img id="big-img" class="shadow" src="<?= 'images/' . $b_image_1 ?>" alt="image-maison" height="auto" width="700">
                 </div>
+
+                <p id="city"><?= $b_city ?></p>
+                <p>Magnifique <span> <?= $b_type ?> </span> saura ravir petits et grands avec une surface agréable de : <span> <?= $b_surface ?> m2 ! </span></p>
+                <p>Prix :<span id="swim"> <?= $b_price ?> </span> € </p>
+                <p>Piscine :<span class="price">  <?= $b_swim == 1 ? " oui !" : "non !" ?> </span></p>
+
             </div>
 
             <div class="col-4">
@@ -54,8 +69,8 @@ ob_start(); ?>
                     <img class="shadow" src="<?= 'images/' . $b_image_3 ?>" alt="image-piece-secondaire" height="350" width="450">
                 </div>
 
-                <p id="price"> <?= $b_price ?> € </p>
-                <p class="mb-3"> <?= $b_surface ?></p>
+               
+               
 
                 <!-- google map ? -->
 
@@ -64,7 +79,7 @@ ob_start(); ?>
         </div>
         
         <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#!" role="button">Ajouter au panier</a>
+            <a class="btn btn-primary btn-lg" href="#!" role="button">Je reserve</a>
         </p>
     </div>
 

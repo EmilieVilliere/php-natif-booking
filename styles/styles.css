@@ -1,0 +1,200 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open sans', sans-serif;
+  font-weight: 300;
+}
+
+section {
+  padding: 5em 0;
+}
+
+hr {
+  margin-bottom: 3em;
+  width: 7%;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+/* NavBar */
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: whitesmoke;
+}
+
+.navbar a,
+.sec-about p {
+  text-align: center;
+}
+
+.items {
+  opacity: 60%;
+}
+
+.items:hover {
+  opacity: 100%;
+}
+
+#logo {
+  width: 40px;
+  height: 40px;
+}
+
+.title {
+  color: grey;
+  margin-left: 1rem;
+}
+
+/* Main */
+.sec-main {
+  position: relative;
+  height: 560px;
+  background: url(https://source.unsplash.com/6Er32o3fT1c/1920x1080) no-repeat center center; 
+  background-size: cover;	
+  background-position : bottom right;
+}
+
+/* t-fdTaeFPhI */
+
+.sec-main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+}
+
+.main-heading {
+  font-family: 'Open sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 9px;
+  text-transform: uppercase;
+}
+
+.container > h1 {
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sec-about a {
+  text-decoration: underline;
+  color: #000;
+}
+
+.sec-about a:hover {
+  color: green; 
+}
+
+#desc-about {
+  position: absolute;
+
+  top: auto;
+  left: 25%;
+
+  width: 100%;
+  height: auto;
+}
+
+.main-heading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  padding: 0;
+  margin: auto;
+  height: 40px;
+  color: #fff;
+}
+
+/* Jumbotron Articles */
+
+.jumbotron {
+  position: relative;
+  height: 360px;
+  background: url(https://source.unsplash.com/6Er32o3fT1c/1920x1080) no-repeat center center; 
+  background-size: cover;	
+  background-position : bottom right;
+}
+
+.jumbotron::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+}
+
+.text-article {
+  font-family: 'Open sans', sans-serif;
+  position: relative;
+  z-index: 5;
+  color: #fff;
+}
+
+.more {
+  font-family: 'Open sans', sans-serif;
+  position: relative;
+  z-index: 5;
+}
+
+/* Details */
+
+
+
+/* Footer */
+ 
+footer {
+  margin-top: 20px;
+} 
+
+h6 {
+  color: green;
+}
+
+.contact {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 50%;
+  font-size: 13px;
+  color: grey;
+}
+
+.icons {
+  color: green;
+  width: 30px;
+  height: 30px;
+}
+
+.icons:hover {
+  color: grey;
+}
+
+.footer-link, .made {
+    text-decoration: underline;
+    color:grey;
+}
+
+.footer-link:hover, .made:hover {
+  color: green;
+}
+
+

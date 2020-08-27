@@ -1,3 +1,10 @@
+<?php  
+
+$id_user = $_SESSION['id'];
+$u_role = $_SESSION['u_role'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,10 +32,13 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <!-- Brand -->
-                <a class="navbar-brand text-dark" href="#">
+                <a class="navbar-bran" href="home.php">
                     <img src="images/anchor-grey.png" alt="logo-my-portfolio" id="logo">
                 </a>
-                <div class="title">Booking.com</div>
+
+                <a class="navbar-brand text-dark" href="home.php">
+                    <div class="title">Booking.com</div>
+                </a>
 
                 <!-- Toggle Button -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,11 +49,11 @@
                 <class class="collapse navbar-collapse" id="navbarItems">
                     <ul class="navbar-nav ml-auto">
 
-                    <!-- <?php if ($u_role == 1): ?> -->
-                    <!-- <?php endif; ?> -->
+                    <?php if ($u_role == 1): ?>
                         <li class="nav-item">
-                            <a class="nav-link items" href="booking.php">Mes annonces</a>
+                            <a class="nav-link items" href="<?='booking.php?id=' . $id_user ?>">Mes annonces</a>
                         </li>
+                    <?php endif; ?>
                         <li class="nav-item">
                             <a class="nav-link items" href="#!">Destinations</a>
                         </li>
@@ -51,7 +61,7 @@
                             <a class="nav-link items" href="#!">Meilleurs offres</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link items" href="account.php">Mon compte</a>
+                            <a class="nav-link items" href="<?='account.php?id=' . $id_user ?>">Mon compte</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link items" href="#!">Contact</a>

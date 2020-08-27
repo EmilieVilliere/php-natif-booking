@@ -1,5 +1,8 @@
 <?php
 
+$id = $_SESSION['id'];
+$u_role = $_SESSION['u_role'];
+
 $title = 'Accueil';
 
 ob_start(); ?>

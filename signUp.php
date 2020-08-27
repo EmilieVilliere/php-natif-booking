@@ -1,5 +1,7 @@
 <?php 
 
+session_start();
+
 require "model/model.php";
 
 if(isset($_POST['u_name']) && isset($_POST['u_email'])) {

@@ -1,5 +1,7 @@
 <?php
 
+$id_user = $_SESSION['id'];
+
 $title= "Mon Compte";
 
 ob_start(); ?>
@@ -30,7 +32,7 @@ h3 {font-weight: 100; text-align: center;}
     top: 15%;
     left: 37%;
 
-    height: 500px;
+    height: 600px;
     width: 500px;
     background-color: rgba(0,0,0,0.5) !important;
 }
@@ -44,30 +46,32 @@ header, nav, footer {display: none;}
 
 <div class="limiter">
     <div class="card">
-        <form action="account.php" method="POST">
+        <form action="<?= 'account.php?id=' . $id_user ?>" method="POST">
 
             <h3 class="mb-3">Mes informations</h3>
+
+            <input type="hidden" name="id" value="<?= $id_user; ?>">
 
             <div class="row">
                 <div class="col-lg-6">
                     <div class="form-group">
                         <label for="u_name">Mon nom :</label>
-                        <input type="text" class="form-control" id="u_name" name="u_name">
+                        <input type="text" class="form-control" id="u_name" name="u_name" value="<?= $u_name ?>">
                     </div>
                     <div class="form-group">
                         <label for="u_phone">Mon mobile :</label>
                         <input type="tel" id="u_phone" name="u_phone" class="form-control" 
-                        pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="06-00-00-00-00" required>
+                        pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="06-00-00-00-00" value="<?= $u_phone ?>">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="form-group">
                         <label for="u_firstname">Mon prénom :</label>
-                        <input type="text" class="form-control" id="u_firstname" name="u_firstname">
+                        <input type="text" class="form-control" id="u_firstname" name="u_firstname" value="<?= $u_firstname ?>">
                     </div>
                     <div class="form-group">
                         <label for="u_role">Mon role :</label>
-                        <select name="u_role" id="u_role" class="form-control">
+                        <select name="u_role" id="u_role" class="form-control" value="<?= $u_role ?>">
                             <option value="1">Admin</option>
                             <option value="0">Utilisteur</option>
                         </select>
@@ -76,12 +80,12 @@ header, nav, footer {display: none;}
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label for="u_email">Mon email :</label>
-                        <input type="email" class="form-control" id="u_email" name="u_email">
+                        <input type="email" class="form-control" id="u_email" name="u_email" value="<?= $u_email ?>">
                     </div>
 
                     <div class="form-group">
                         <label for="u_password">Mot de passe : </label>
-                        <input type="password" class="form-control" id="u_password" name="u_password">
+                        <input type="password" class="form-control" id="u_password" name="u_password" value="<?= $u_password ?>">
                     </div>
 
                     <div class="mt-4">
@@ -91,7 +95,7 @@ header, nav, footer {display: none;}
             </div>
             
             <div class="form-check text-center mt-4">
-                <a href="index.php">Retourner à la connexion</a>
+                <a href="home.php">Retourner au site</a>
             </div>
 
         </form>

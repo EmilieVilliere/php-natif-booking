@@ -40,7 +40,7 @@ h3 {font-weight: 100; text-align: center;}
         
         <div class="card">
             <h4 class="display-4 text-article">On ajoute une annonce ?</h4>
-            <form action="booking.php" method="POST">
+            <form action="booking.php" method="POST" enctype="multipart/form-data">
 
                 <div class="row">
             <!-- Première ligne -->
@@ -71,18 +71,18 @@ h3 {font-weight: 100; text-align: center;}
                     </div>
                     <div class="col-3">
                         <div class="form-check text-article mt-3">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked required>
-                            <label class="form-check-label" for="gridRadios1"> Appartement</label>
+                            <input class="form-check-input" type="radio" name="b_type" id="b_type" value="appartement" checked>
+                            <label class="form-check-label" for="b_type"> Appartement</label>
                         </div>
                         <div class="form-check mt-3 text-article">
-                            <input class="form-check-input" type="checkbox" id="b_type" value="1" name="b_type" required>
-                            <label class="form-check-label" for="b_type">Piscine ?</label>
+                            <input class="form-check-input" type="checkbox" id="b_swim" name="b_swim" value="1">
+                            <label class="form-check-label" for="b_swim">Piscine ?</label>
                         </div>
                     </div>
                     <div class="col-3">
                         <div class="form-check text-article  mt-3">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" required>
-                            <label class="form-check-label" for="gridRadios1"> Maison</label>
+                            <input class="form-check-input" type="radio" name="b_type" id="b_type" value="maison">
+                            <label class="form-check-label" for="b_type"> Maison</label>
                         </div>
                     </div>
             <!-- Troisième ligne -->
@@ -100,20 +100,20 @@ h3 {font-weight: 100; text-align: center;}
             <!-- Quatrième ligne -->
                     <div class="col-4 mt-3">
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-                            <label class="custom-file-label" for="validatedCustomFile">1er image</label>
+                            <input type="file" class="custom-file-input" id="b_image_1" name="b_image_1">
+                            <label class="custom-file-label" for="b_image_1">1er image</label>
                         </div>
                     </div>
                     <div class="col-4 mt-3">
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-                            <label class="custom-file-label" for="validatedCustomFile">2e image</label>
+                            <input type="file" class="custom-file-input" id="b_image_2" name="b_image_2">
+                            <label class="custom-file-label" for="b_image_2">2e image</label>
                         </div>
                     </div>
                     <div class="col-4 mt-3">
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-                            <label class="custom-file-label" for="validatedCustomFile">3e image</label>
+                            <input type="file" class="custom-file-input" id="b_image_3" name="b_image_3">
+                            <label class="custom-file-label" for="b_image_3">3e image</label>
                         </div>
                     </div>
                     <div class="col-12">

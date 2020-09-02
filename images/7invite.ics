@@ -1,0 +1,101 @@
+BEGIN:VCALENDAR
+METHOD:REQUEST
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Romance Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=-1SU;BYMONTH=10
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=-1SU;BYMONTH=3
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=Pierre-Louis POLET:mailto:pierrelouis.polet@alten.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=emilie.vll
+ r@gmail.com:mailto:emilie.vllr@gmail.com
+ATTACH:CID:image001.png@01D66981.B7C72E30
+ATTACH:CID:image002.png@01D66981.B7C72E30
+ATTACH:CID:image003.png@01D66981.B7C72E30
+ATTACH:CID:image004.png@01D66981.B7C72E30
+ATTACH:CID:image005.png@01D66981.B7C72E30
+ATTACH:CID:image006.png@01D66981.B7C72E30
+ATTACH:CID:image007.png@01D66981.B7C72E30
+ATTACH:CID:image008.png@01D66981.B7C72E30
+ATTACH:CID:image009.png@01D66981.B9F09DE0
+ATTACH:CID:image010.png@01D66981.BA078140
+ATTACH:CID:image009.png@01D66981.BA0D9BC0
+DESCRIPTION;LANGUAGE=fr-FR:Bonjour Emilie\,\n\nVoici comme convenu une invi
+ tation pour notre échange téléphonique de Mardi à 18h00.\n\nJe reste 
+ à votre disposition\,\n\n________________________________\nPierre-Louis P
+ OLET\nResponsable d’agence\nALTEN SA France – Agence NORD\nTél. | +33
+  (0)3 20 30 33 24 • Mob. | +33 (0)6 26 53 32 47\n2\, Rue Horus\, Batimen
+ t « Les Gradins »\, 3eme étage\, Parc Scientifique de la Haute Borne\, 
+ 5936 Villeneuve d’Ascq\, France\n[https://www.alten.com/wp-content/uploa
+ ds/2019/02/icon-Linkedin.png]<https://www.linkedin.com/company/alten/> [ht
+ tps://www.alten.com/wp-content/uploads/2019/02/icon-Twitter.png] <https://
+ twitter.com/Alten_france>  [https://www.alten.com/wp-content/uploads/2019/
+ 02/icon-Youtube.png] <https://www.youtube.com/user/altenfrance>  [https://
+ www.alten.com/wp-content/uploads/2019/02/icon-Facebook.png] <https://www.f
+ acebook.com/AltenFrance/>  [https://www.alten.com/wp-content/uploads/2019/
+ 02/icon-Instagram.png] <https://www.instagram.com/altenfrance/>  [https://
+ www.alten.com/wp-content/uploads/2019/02/icon-Viadeo.png] <https://www.via
+ deo.com/fr/company/alten>  [https://www.alten.com/wp-content/uploads/2019/
+ 02/icon-Glassdoor.png] <https://www.glassdoor.fr/Pr%C3%A9sentation/Travail
+ ler-chez-ALTEN-EI_IE12800.16\,21.htm>\n[https://www.alten.com/wp-content/u
+ ploads/2018/08/logo-alten-black-DIGITAL.png]<http://www.alten.com/>\n\n\n\
+ n\n\n\nCe message et toutes les pièces jointes sont établis à l'intenti
+ on exclusive de ses destinataires et sont confidentiels. Si vous recevez c
+ e message par erreur\, merci de le détruire et d'en avertir immédiatemen
+ t l'expéditeur. Vos données personnelles sont traitées conformément au
+ x lois et règlements en matière de protection des données\, notamment l
+ e RGPD. Pour en savoir plus sur le traitement de vos données personnelles
+ \, cliquez ici<https://www.alten.fr/notices-dinformation-relatives-aux-don
+ nees-personnelles/>.\n\nThe information contained in this e-mail and any a
+ ttachments are intended solely for the addressees. If you received this em
+ ail in error\, please contact the sender and delete the email from your sy
+ stem. All personal details are treated in accordance with the relevant dat
+ a protection regulations\, in particular GDPR. Click here<https://www.alte
+ n.com/data-privacy-information/> for more information about the collection
+  of your personal data.\n\nDiese Nachricht und allfällige angehängte Dok
+ umente sind vertraulich und nur für den/die Adressaten bestimmt. Sollten 
+ Sie nicht der beabsichtigte Adressat sein\, bitten wir den Absender zu ver
+ ständigen und die Information zu vernichten. Alle personenbezogenen Daten
+  werden gemäß den einschlägigen Datenschutzrechtlichen Vorschriften\, i
+ nsbesondere DSGVO\, mit höchster Vertraulichkeit behandelt.\n
+UID:040000008200E00074C5B7101A82E00800000000D07DDAB98169D601000000000000000
+ 0100000008CE1159A9E1F7C4D9D4FC56A42C83591
+SUMMARY;LANGUAGE=fr-FR:Echange téléphonique ALTEN
+DTSTART;TZID=Romance Standard Time:20200804T180000
+DTEND;TZID=Romance Standard Time:20200804T190000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20200803T083454Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+LOCATION;LANGUAGE=fr-FR:
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-OWNERAPPTID:-347895836
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR
